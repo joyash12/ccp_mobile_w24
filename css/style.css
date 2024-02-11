@@ -1,0 +1,190 @@
+.food-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bacon-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+    .bacon-photos {
+      grid-template-columns: 1fr;
+    }
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+  }
+  
+
+.skiptomain {
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    background-color: olive;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid slategray;
+    padding: 20px 20px;
+    opacity: 0;
+}
+
+.skiptomain:focus {
+    opacity: 1;
+}
+
+body {
+    margin: 5%;
+    background-color: beige;
+}
+
+.header {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background: darkolivegreen;
+    color: beige;
+    font-size: 20px;
+    border: slategray solid 2px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em;
+    margin-top: 3em;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 1em; 
+}
+
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 18px; 
+    margin: 5px;
+    margin-top: 20px;
+}
+
+h3 span {
+    background-color: rgb(183, 194, 204);
+    padding: 5px;
+}
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    font-size: 16px;
+}
+
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    list-style-type: circle;
+}
+ol li {
+    list-style-type: decimal;
+}
+
+img {
+    display: inline-block;
+    width: 15em;
+    margin: 5px;
+    border: darkolivegreen solid 5px;
+    border-radius: 5px;
+}
+
+video {
+    display: inline-block;
+    width: 15em;
+    margin: 5px;
+    border: darkolivegreen solid 5px;
+    border-radius: 5px;
+}
+
+.home img {
+    display: inline-block;
+    width: 15em;
+    border-color: olive;
+    border-width: 8px;
+    border-style: double;
+}
+
+.home img:hover {
+    box-shadow: 0 0 10px #376F70;
+}
+:focus {
+    box-shadow: 0 0 10px #376F70;
+}
+
+.pet {
+    padding: 20px;
+    border: slategray dashed 1px;
+    background-color: burlywood;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* Navigation Bar */
+nav ul li{
+    display: inline;
+	margin: 0;
+    padding: 0;
+	width: 25%;
+	border: 1px solid #bbb;
+	width: 20%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkolivegreen;
+  }
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+  
+    /* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: darkkhaki;
+}
+
+.active {
+    background-color: darkslategray;
+    text-decoration: underline;
+} 
+
+@media (prefers-reduced-motion) {
+    .animation {
+        display: none;
+    }
+}
